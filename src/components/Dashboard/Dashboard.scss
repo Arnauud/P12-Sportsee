@@ -1,0 +1,70 @@
+.dashboard {
+  position: absolute;
+  top: 8%;
+  left: 11%;
+  width: 88%;
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column; // Stack the header and the rest of the content vertically
+    width: 100%;
+    height: 100%; // Optional if you want to make it fill the viewport
+
+
+    .dashboard-greeting {
+      width: 100%;
+    }
+
+    .dashboard-main {
+      display: flex;
+      margin-top: 9%;
+      gap: 10px; // Responsive gap between .dashboard-left and .dashboard-right
+
+      .dashboard-left {
+        display: flex;
+        flex-direction: column; // Stack barChart and miniChart vertically
+        flex-grow: 1; 
+        max-width: 835px;
+        gap: 10px; // Responsive gap between .dashboard-barChart and .dashboard-miniChart
+
+        .dashboard-barChart,
+        .dashboard-miniChart {
+          flex: 1; // Equal height for both charts
+          background-color: #FBFBFB;
+        }
+      }
+
+      .dashboard-miniChart {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+        .score-chart, .radar-chart, .objectifs-chart{
+          max-width: 256px;
+        }
+
+      }
+
+      .dashboard-right {
+        flex: 1; // Adjust the size of the macro section relative to the left
+      }
+    }
+  }
+}
+
+
+.dashboard-error-container{
+  position: absolute;
+  top : 8%;
+  width: 80%;
+  margin-left: 8%;
+  .dashboard-error-message{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  span{
+    font: bold;
+    color: red;
+  }
+}

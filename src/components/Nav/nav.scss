@@ -1,0 +1,80 @@
+.nav-section {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for nav-t and nav-l */
+    height: 100vh;
+  
+    .nav-t {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      height: 60px;
+      background-color: black;
+      width: 100%;
+      box-sizing: border-box;
+  
+      .logo {
+        width: 40px;
+      }
+  
+      p {
+        color: red;
+        font-size: 18px;
+        margin-left: 10px;
+        writing-mode: inherit;
+        transform: inherit;
+        
+      }
+  
+      .nav-t-links {
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        margin-left: auto;
+      }
+  
+      .nav-text {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+    }
+  
+    .nav-l {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+      padding: 20px 0;
+      width: 80px; /* Sidebar width */
+      box-sizing: border-box;
+      position: fixed; /* Fixed on the left side */
+      top: 60px; /* Positioning below nav-t */
+      bottom: 0;
+    }
+  
+    .nav-l-container-icon {
+        display: flex;
+        flex-direction: column; /* Keep the icons stacked */
+        align-items: center; /* Center icons horizontally */
+        justify-content: center; /* Center icons vertically in the available space */
+        flex-grow: 1; /* Take up the remaining space, pushing the `p` down */
+      }
+  
+    .nav-icon {
+      margin: 5px 0;
+      img {
+        width: 50px;
+      }
+    }
+  
+    p {
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      writing-mode: vertical-rl;
+      transform: rotate(-180deg);
+      margin-bottom: 20px;
+    }
+  }
+  

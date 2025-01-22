@@ -1,0 +1,52 @@
+.dashboard-macro {
+  display: flex;
+  }
+
+.macro-nutrient-container {
+    display: flex;
+    flex-direction: column; /* Keep the container in a column */
+    gap: 40px; /* Space between each macro-container */
+    align-items: center; /* Center the items horizontally */
+  }
+  
+  .macro-container {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row: image + text */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Align items to the left */
+    width: 258px;
+    height: 124px;
+    gap: 10px; /* Space between image and text */
+    border-radius: 5px 0px 0px 0px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 4px 0px #00000005;
+  }
+  
+  // .macro-container img {
+    // position: absolute;
+    // left: 21%;
+    // width: 55px; 
+    // height: auto;
+  // }
+  
+  .macro-container .text-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  .macro-container .mirco-text {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .macro-container p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    color: #74798C;
+
+  }
+

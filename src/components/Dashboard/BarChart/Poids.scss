@@ -1,0 +1,51 @@
+.custom-bar-chart {
+  width: 58%;
+    .kilogram-bar {
+        fill: black;
+    }
+    .calories-bar {
+      fill: #E60000;
+    }
+  }
+    
+// POP UP Window: when clicking on the chart
+.recharts-default-tooltip {
+    background-color: #E60000 !important; // Jordan - where to find this style when injecting it into the dom ? 
+    margin: 0px !important; // Jordan - where to find this style when injecting it into the dom ?
+    .recharts-tooltip-item{ 
+    color: white !important; // Jordan - where to find this style when injecting it into the dom ?
+    padding: 12px 4px !important; // Jordan - where to find this style when injecting it into the dom ?
+  }
+
+// Hiding the other none essential data
+.recharts-tooltip-label, .recharts-tooltip-item-name, .recharts-tooltip-item-separator{
+    display: none;
+  }
+}
+
+.recharts-default-legend{
+  text-align: right;
+}
+
+
+.recharts-cartesian-axis-tick-line{
+  display: none
+}
+
+.custom-legend {
+  display: flex;
+  gap: 16px;
+  margin-right: 30px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}

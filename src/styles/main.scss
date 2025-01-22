@@ -1,0 +1,10 @@
+@use './variables.scss';
+
+@use './../components/Dashboard/Dashboard.scss';
+@use '../components/Dashboard/Header/header.scss';
+@use '../components/Dashboard/MacroNutrient/MarcoNutrient.scss';
+@use '../components/Nav/nav.scss';
+@use '../components/Dashboard/BarChart/Poids.scss';
+@use '../components/Dashboard/LineChart/objectifs.scss';
+@use '../components/Dashboard/Radar/radar.scss';
+@use '../components/Dashboard/KPI/kpi.scss'
