@@ -27,8 +27,8 @@ const useFetchUserData = (userId) => {
         const performanceResponse = await fetch(`http://localhost:3000/user/${userId}/performance`);
         if (!performanceResponse.ok) throw new Error(`Failed to fetch user performance data: ${performanceResponse.status}`);
         const performanceResult = await performanceResponse.json();
-        console.log("USER_PERFORMANCE data:", performanceResult.data);
-        setUserPerformance(performanceResult.data); // Jordan: fetch mock doesn't have .data and it works? .json formating?
+        // console.log("USER_PERFORMANCE data:", performanceResult.data);
+        setUserPerformance(performanceResult.data); 
 
         // Fetch the user average session data
         const avgSessionResponse = await fetch(`http://localhost:3000/user/${userId}/average-sessions`);

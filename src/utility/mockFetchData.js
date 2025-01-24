@@ -13,7 +13,6 @@ const useFetchUserMockData = (userId) => {
   const [poidsData, setPoidsData] = useState(null);
   const [userPerformance, setUserPerformance] = useState(null);
   const [userAverageSessions, setUserAverageSessions] = useState(null);
-  const error = "Nope"
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,7 +43,7 @@ const useFetchUserMockData = (userId) => {
         // if (!avgSessionResult) throw new Error(`Average sessions data for user ID ${userId} not found`);
         setUserAverageSessions(avgSessionResult.sessions);
       } catch (error) {
-        // console.error("Error fetching data:", error);
+        console.error("Error fetching data:", error);
       }
     };
 
